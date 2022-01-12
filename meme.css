@@ -1,0 +1,46 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Quicksand:wght@300;400;500&display=swap);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: black;
+    color: white; 
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.typed-text {
+    font-weight: normal;
+    color:blue; 
+}
+
+.cursor {
+    display: inline-block;
+    width: 12px;
+    background-color:#ccc; 
+    animation: blink 1s infinite;
+}
+
+
+@keyframes blink {
+    0% {background-color: white;}
+    50% {background-color: transparent;}
+    100% {background-color: white;}
+}

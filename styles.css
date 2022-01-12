@@ -1,0 +1,201 @@
+*{
+margin: 0px; 
+padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*-----Top Nav logo ----*/
+#coverimage{
+    float: left;
+    padding-top:15px;
+    padding-left: 30px;
+}
+
+#indexhome {
+    float:left;
+    padding-left:90px;
+    padding-top:20px;
+    position: absolute;
+    font-family:'Montserrat', sans-serif;
+    font-size: 25px;
+}
+/*-----Navbar begins ----*/
+.navbar{
+    height:60px;
+    width:100%;
+    background-color: #fff;
+    background-position:center;
+    background-size: cover;
+    position: relative; 
+}
+nav { 
+    display: flex;
+    padding: 2% 10%; 
+    justify-content: space-between;
+    align-items: center; 
+}
+nav img{ 
+    width: 12px;
+}
+
+/*---Navigation Bar LIST Spacing and Layout--*/
+.nav-links{
+    text-align:right;
+    padding-right: 25px;
+    z-index: 999;
+}
+
+.nav-links ul li{
+    list-style: none; 
+    display: inline-block;
+    padding: 30px 10px; 
+}
+
+/*---Navigation Bar Font and Style--*/
+
+.nav-links ul li a{
+    color: rgb(71, 71, 71);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration:wavy; 
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(214, 0, 0);
+    display: block;
+    margin: auto; 
+    transition: .8s; 
+}
+.nav-links ul li:hover::after {
+    width:100%; 
+}
+/*-------NAVBAR ENDS HERE---------*/
+/*-------HEADER BOX STARTS HERE---------*/
+.headerbox{
+    min-height: 400px;
+    width: 100%;
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: rgb(31, 30, 30); 
+    color: rgb(245, 236, 236);
+    position: absolute;
+    top: 12%;
+    text-align:center;
+}
+.headerbox h1{
+    font-size:62px;
+    font-weight: 300;
+    -ms-transform:translateY(100%);
+    transform:translateY(150%);
+}
+@keyframes fadeInUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+.headerbox p{
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 200px;
+    opacity: 0;
+    transform: translateY(10rem);
+    animation: fadeInUp 2000ms ease forwards;
+}
+
+.container p{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+.typed-text {
+    font-weight: normal;
+    color:blue; 
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    background-color:#ccc; 
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {background-color: white;}
+    50% {background-color: transparent;}
+    100% {background-color: white;}
+}
+
+.button {
+    text-decoration: wavy;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    font-size: 22px;
+    background: transparent;
+    cursor: pointer;
+    float: center; 
+    border-radius: 8px;
+}
+.button:hover{ 
+    border: 1px solid #3639f4; 
+    background: rgb(3, 165, 165);
+    transition: 0.5s;
+}
+
+/*-----header ends-----*/
+/*-----mobile design starts-----*/
+@media(max-width: 700px){
+    .headerbox h1{ 
+        font-size: 40px; 
+    }
+
+    .nav-links ul li{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        background: #f44336;
+        height:100vh;
+        width: 200px;
+        top:0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+
+}
+
+/*-----mobile design ends */
+
+
+.Aboutpage{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top:1000px; 
+}
+
+
+
+
+
+
+/*------ ABOUT US PAGE-----*/
+.aboutusheader{
+    min-height: 80vh;
+    width:100%; 
+    background-color:rgb(77, 53, 207);
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+}
+

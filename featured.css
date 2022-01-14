@@ -1,0 +1,257 @@
+*{
+margin: 0px; 
+padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*-----Top Nav logo ----*/
+#coverimage{
+    float: left;
+    padding-top:15px;
+    padding-left: 30px;
+}
+
+#indexhome {
+    float:left;
+    padding-left:90px;
+    padding-top:20px;
+    position: absolute;
+    font-family:'Montserrat', sans-serif;
+    font-size: 25px;
+}
+/*-----Navbar begins ----*/
+.navbar{
+    height:60px;
+    width:100%;
+    background-color: #fff;
+    background-position:center;
+    background-size: cover;
+    position: relative; 
+}
+nav { 
+    display: flex;
+    padding: 2% 10%; 
+    justify-content: space-between;
+    align-items: center; 
+}
+nav img{ 
+    width: 12px;
+}
+
+/*---Navigation Bar LIST Spacing and Layout--*/
+.nav-links{
+    text-align:right;
+    padding-right: 25px;
+    z-index: 999;
+}
+
+.nav-links ul li{
+    list-style: none; 
+    display: inline-block;
+    padding: 30px 10px; 
+}
+
+/*---Navigation Bar Font and Style--*/
+
+.nav-links ul li a{
+    color: rgb(71, 71, 71);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration:wavy; 
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:rgb(42, 173, 224);
+    display: block;
+    margin: auto; 
+    transition: .8s; 
+}
+.nav-links ul li:hover::after {
+    width:100%; 
+}
+/*-------NAVBAR ENDS HERE---------*/
+/*-------HEADER BOX STARTS HERE---------*/
+.headerbox{
+    height: 400px;
+    width: 100%;
+    font-family: 'Darker Grotesque', sans-serif;
+    background-color: rgb(31, 30, 30); 
+    color: rgb(245, 236, 236);
+    position: absolute;
+    top: 14%;
+    text-align:center;
+}
+.headerbox h1{
+    font-size:62px;
+    font-weight: 300;
+    -ms-transform:translateY(100%);
+    transform:translateY(150%);
+}
+@keyframes fadeInUp{
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.container p{
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    padding-top:100px;
+    transform: translateY(10rem);
+    animation: fadeInUp 4000ms ease forwards;
+}
+.headerboxlowertext p{
+    font-size: 30px;
+    font-weight: lighter;
+    padding-top: 20px;
+    opacity: 0;
+    transform: translateY(10rem);
+    animation: fadeInUp 2200ms ease forwards;
+}
+
+.headerboxlowertext a {
+    position: absolute;
+    transform: translateX(-50%);
+  
+}
+.typed-text {
+    font-weight: normal;
+    color:rgb(1, 201, 201); 
+}
+
+.cursor {
+    display: inline-block;
+    width: 6px;
+    background-color:#ccc; 
+    animation: blink 1s 4;
+}
+
+@keyframes blink {
+    0% {background-color: white;}
+    50% {background-color: transparent;}
+    100% {background-color: white;}
+}
+
+.button {
+    text-decoration: wavy;
+    color: rgb(255, 254, 254);
+    border: 1px solid #fff;
+    padding: 8px 15px;
+    font-size: 20px;
+    background: transparent;
+    cursor: pointer;
+    float: center; 
+    border-radius: 8px;
+    margin-top: 25px;
+}
+.button:hover{ 
+    border: 1px solid rgb(3, 165, 165) ; 
+    background: rgb(3, 165, 165);
+    transition: 0.5s;
+}
+
+/*-----header ends-----*/
+
+/*-----Lower Homepage------*/
+
+.Aboutpage{
+    width:100%;
+    margin:auto;
+    padding-top:500px; 
+}
+
+
+
+.Aboutpage h1{
+    font-size: 36px; 
+    font-weight: 600; 
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgb(31, 30, 30);
+    text-underline-offset: 10px;
+}
+
+.Aboutpage p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding:10px; 
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+}
+
+.columnheader h1{
+    float:right; 
+    padding-right:175px;
+}
+
+.columnheaderimg {
+    float:left;
+    padding-left:10px;
+}
+
+.columntext{
+    padding-top:50px;
+    padding-left: 100px;
+}
+
+.columnleft img {
+    padding-top: 50px;
+    padding-left: 10px ;
+    padding-right: 10px ;
+}
+
+.midcolumnheader{
+    float:right; 
+    padding-right:600px;
+    padding-top: 50px;
+}
+
+.midcolumnheaderimg {
+    float:left;
+    padding-left:50px;
+    padding-top: 50px;
+}
+
+.midcolumntext{
+    padding-top:100px;
+    padding-left: 100px;
+}
+
+.twothirdcontainer {
+    width: 40%;
+    display:block;
+}
+
+.firstprojimg {
+    padding-left: 100px; 
+    float: right;
+    max-width: 90%;
+    display:block;
+}
+
+.firstprojHeading{
+    padding-top: 100px;
+}
+
+.secondproj {
+    padding-top: 200px;
+}
+
+/*------ ABOUT US PAGE-----*/
+.aboutusheader{
+    min-height: 80vh;
+    width:100%; 
+    background-color:rgb(77, 53, 207);
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+}
+

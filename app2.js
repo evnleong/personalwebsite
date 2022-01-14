@@ -1,4 +1,4 @@
-const textArray = ["About Me!"];
+const textArray = ["Featured Projects"];
 const typingDelay = 200;
 const erasingDelay = 100; 
 const newTextDelay = 2000;

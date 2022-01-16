@@ -156,6 +156,18 @@ nav img{
     transition: 0.5s;
 }
 
+.mailink a{
+        color: rgb(3, 165, 165);
+        background-color: transparent;
+        text-decoration: none;
+}
+
+
+.mailink a:hover{
+    color: rgb(185, 255, 255);
+    background-color: transparent;
+    text-decoration: none;
+}
 /*-----header ends-----*/
 
 /*-----Lower Homepage------*/

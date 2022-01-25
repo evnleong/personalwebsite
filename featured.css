@@ -1,55 +1,103 @@
 *{
 margin: 0px; 
 padding: 0px;
+box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
 /*-----Top Nav logo ----*/
-#coverimage{
-    float: left;
-    padding-top:15px;
-    padding-left: 30px;
-}
 
-#indexhome {
-    float:left;
-    padding-left:90px;
-    padding-top:20px;
-    position: absolute;
-    font-family:'Montserrat', sans-serif;
-    font-size: 25px;
-}
 /*-----Navbar begins ----*/
-.navbar{
-    height:60px;
-    width:100%;
-    background-color: #fff;
-    background-position:center;
-    background-size: cover;
-    position: relative; 
-}
-nav { 
-    display: flex;
-    padding: 2% 10%; 
+
+.navbar { 
+    display:flex;
     justify-content: space-between;
     align-items: center; 
 }
-nav img{ 
-    width: 12px;
+
+#indexhome {
+    font-size: 1.5rem;
+    align-items: left;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 50px;  
+    position: absolute;
 }
+
+.nav-links ul {
+    margin: 0;
+    padding: 0; 
+    display: flex;
+}
+
+.nav-links li {
+   list-style:none;
+}
+
+.nav-links li a{
+    list-style:none;
+    padding: 1rem;
+    display: block;
+ }
+
+ .nav-links {
+ display: flex;
+ }
+ #menubar {
+     float: right;
+     padding-top: 30px;
+     padding-right:30px;
+     font-size:30px;
+     display:none;
+ }
+
 
 /*---Navigation Bar LIST Spacing and Layout--*/
-.nav-links{
-    text-align:right;
-    padding-right: 25px;
-    z-index: 999;
-}
 
-.nav-links ul li{
-    list-style: none; 
-    display: inline-block;
-    padding: 30px 10px; 
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+    .nav-links  {
+        flex-direction: column; 
+        align-items: flex-start; 
+        z-index: 11;
+        position: relative;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction:column;
+        z-index: 11;
+        position: relative;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: .5rem;
+    }
+
+    .nav-links.active {
+        display: none; 
+    }
+
+    #menubar {
+        float: right;
+        padding-top: 30px;
+        padding-right:30px;
+        font-size:30px;
+        display:flex;
+        cursor: pointer;
+    }
 }
 
 /*---Navigation Bar Font and Style--*/
@@ -75,6 +123,7 @@ nav img{
     width:100%; 
 }
 /*-------NAVBAR ENDS HERE---------*/
+
 /*-------HEADER BOX STARTS HERE---------*/
 .headerbox{
     height: 400px;
@@ -82,9 +131,10 @@ nav img{
     font-family: 'Darker Grotesque', sans-serif;
     background-color: rgb(31, 30, 30); 
     color: rgb(245, 236, 236);
-    position: absolute;
+    position: relative;
     top: 14%;
     text-align:center;
+    z-index: 2;
 }
 .headerbox h1{
     font-size:62px;
@@ -121,23 +171,8 @@ nav img{
     transform: translateX(-50%);
   
 }
-.typed-text {
-    font-weight: normal;
-    color:rgb(1, 201, 201); 
-}
 
-.cursor {
-    display: inline-block;
-    width: 6px;
-    background-color:#ccc; 
-    animation: blink 1s 4;
-}
 
-@keyframes blink {
-    0% {background-color: white;}
-    50% {background-color: transparent;}
-    100% {background-color: white;}
-}
 
 .button {
     text-decoration: wavy;
@@ -159,15 +194,13 @@ nav img{
 
 /*-----header ends-----*/
 
-/*-----Lower Homepage------*/
+/*-----Lower Homepage Content ------*/
 
 .Aboutpage{
     width:100%;
     margin:auto;
     padding-top:500px; 
 }
-
-
 
 .Aboutpage h1{
     font-size: 36px; 
@@ -187,48 +220,45 @@ nav img{
     border-radius: 8px;
 }
 
-.columnheader h1{
+.firstproject h1{
     float:right; 
     padding-right:175px;
 }
 
-.columnheaderimg {
+.firstprojectimg {
     float:left;
     padding-left:10px;
 }
 
-.columntext{
+.firstprojecttext{
     padding-top:50px;
     padding-left: 100px;
 }
 
-.columnleft img {
+.firstproject img {
     padding-top: 50px;
     padding-left: 10px ;
     padding-right: 10px ;
 }
 
-.midcolumnheader{
+.secondproject{
     float:right; 
     padding-right:600px;
     padding-top: 50px;
 }
 
-.midcolumnheaderimg {
+.secondprojectimg {
     float:left;
     padding-left:50px;
     padding-top: 50px;
 }
 
-.midcolumntext{
+.secondprojecttext{
     padding-top:100px;
     padding-left: 100px;
 }
 
-.twothirdcontainer {
-    width: 40%;
-    display:block;
-}
+
 
 .firstprojimg {
     padding-left: 100px; 

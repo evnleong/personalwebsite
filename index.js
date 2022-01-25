@@ -1,7 +1,5 @@
-const textArray = ["Featured Projects"];
-const typingDelay = 200;
-const erasingDelay = 100; 
-const newTextDelay = 2000;
+const textArray = ["Evan here."];
+const typingDelay = 160;
 
 const typedTextSpan = document.querySelector(".typed-text");
 
@@ -18,7 +16,14 @@ function type() {
     else {
     }
 }
-
 document.addEventListener("DOMContentLoaded", function() {
-   setTimeout(type, 1000);
+   setTimeout(type, 600);
 });
+
+
+const menubar = document.getElementsByClassName ('fas')[0]
+const navbarlinks= document.getElementsByClassName ('nav-links')[0]
+
+menubar.addEventListener('click', () => {
+    navbarlinks.classList.toggle ('active')
+})

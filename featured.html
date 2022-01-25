@@ -11,14 +11,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600&display=swap" rel="stylesheet">  
+        <script src= "featured.js" defer> </script>
 </head>
 
 <body>
-    <section class= "navbar">
-        <div class= "nav-links">
-            <a href="index.html" id='coverimage'> <img src= Images/coverimage.png width="100px" height="75px"> </a>
+    <i class="fas fa-bars" id= "menubar"></i>
+    <nav class= "navbar"> 
+            <a href="index.html" id='coverimage'> <img src= Images/coverimage.png width="100px" height="75px"> </a> 
             <div id= 'indexhome'> Evan Leong </div>
-                <ul> 
+            
+            <div class= "nav-links">
+                <ul>  
                     <li><a href= "index.html"> Home </a> </li>
                     <li><a href= "featured.html"> Featured </a> </li>
                     <li><a href= "updatelog.html"> Update Log </a> </li>
@@ -27,10 +30,11 @@
                     <li><a href="https://www.linkedin.com/in/evanleong1"><i class="fab fa-linkedin"></i> </a>  </li>
                     <li><a href="https://github.com/evanlxng"><i class="fab fa-github-square"></i></a></li> 
                 </ul>
-        </div>
-    </section>
+            </div> 
+    </nav>
+  
 
-    <section class= "headerbox">
+     <section class= "headerbox">
        <div class = "container">
             <p>Featured Projects</p>
         </div>
@@ -48,13 +52,13 @@
 
     <div>
 
-            <div id ="aboutthis" class="columnheader" >
+            <div id ="aboutthis" class="firstproject" >
                  <h1> NASA and Texas Instruments Coding Contest (May-Aug 2020)</h1>
             </div>
-            <div class="columnheaderimg">
+            <div class="firstprojectimg">
                 <img src= images/NASAlogo.png width=65px height=50px>
             </div>
-            <div class= "columntext"> 
+            <div class= "firstprojecttext"> 
                 <p> During the summer of 2020, I participated in the NASA and TI Coding Contest with a classmate.
             <br> Over the course of 5 rounds of competition, our presentation and project placed 3rd in the nation!
             <br>Together, we built a 3-stage water santization system with UV-C spectrum light to combat bacteria on the International Space Station 
@@ -65,7 +69,7 @@
             
             </div>
             
-            <div class= "columnleft">
+            <div class= "firstproject">
                 <img width=550px height=550px src= images/nasa1.png >
                 <img width=700px height=550px src= images/nasa2.png > 
             </div>
@@ -74,13 +78,13 @@
 
      <div>
 
-        <div class="midcolumnheader" >
+        <div class="secondproject">
              <h1> Eagle Scout Project (May-June 2019)</h1>
         </div>
-        <div class="midcolumnheaderimg">
+        <div class="secondprojectimg">
             <img src= images/bsalogo.png width=49px height=53px>
         </div>
-        <div class= "midcolumntext"> 
+        <div class= "secondprojecttext"> 
             <p> Drafted and designed in SketchUp CAD a system of 3 garden beds for a student garden at Waite H.S in Toledo. 
             <br>Presented project ideas to a BSA committee and met with school administration to manage approval for the project. 
             <br>Self-Fundraised $200+ for raw materials for the project, and led a group of Scouts to build and put the garden beds in place.
@@ -89,11 +93,11 @@
             </p>
         </div>
         
-        <div class= "columnleft">
+        <div class= "secondproject">
             <img width= 650vh height=650vh src= images/eaglescout.png >
             <img width= 650vh height=650vh src= images/eaglescout2.png> 
         </div>
- </div>
+    </div>
    
       <div class="secondproj">
         <div class="">
@@ -113,8 +117,25 @@
         <img src= images/bannertop.png> 
     </div>
     </div>
-
-
     </section>
+
+
+
+<script> 
+    var navLinks = document.getElementById ("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0%";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200%";
+    
+    }
+
+
+</script> 
+
+
 </body>
 </html>

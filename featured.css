@@ -221,6 +221,9 @@ html{
     border-radius: 8px;
 }
 
+.firstproject {
+    padding-top:50px;
+}
 .firstproject h1{
     float:right; 
     padding-right:175px;
@@ -232,7 +235,7 @@ html{
 }
 
 .firstprojecttext{
-    padding-top:50px;
+    padding-top:100px;
     padding-left: 100px;
 }
 
@@ -242,11 +245,12 @@ html{
     padding-right: 10px ;
 }
 
-.secondproject{
+.secondproject h1{
     float:right; 
     padding-right:600px;
     padding-top: 50px;
 }
+
 
 .secondprojectimg {
     float:left;
@@ -259,22 +263,12 @@ html{
     padding-left: 100px;
 }
 
-
-
-.firstprojimg {
-    padding-left: 100px; 
-    float: right;
-    max-width: 90%;
-    display:block;
-}
-
-.firstprojHeading{
-    padding-top: 100px;
-}
-
 .secondproj {
     padding-top: 200px;
 }
+
+
+
 
 /*------ ABOUT US PAGE-----*/
 .aboutusheader{

@@ -1,16 +1,14 @@
 # Personal Website Project! (evanlxn.ga)
 
-hello world! Evan here! 
+hello world! Evan here! Welcome to the readme for my personal website!
 
 
 # The Story
-This is the readme for my personal portfolio website.
-Over the winter of my freshman year at Cornell, I became super invested in web development, experimenting with ways to compile my personal passion projects into a public portfolio. 
-
-
-I tested out programs like Netlify, Figma, VSCode, Google SEO, and a free domain registrar to distribute my personal website over the internet completely for free. 
+Over the past few months, I've been experimenting with ways to compile my personal passion projects into a public portfolio online. 
+The goal has always been to try out new technologies, constantly stay learning, and hopefully along the way I can build valuable skills in a manner that is both cost effective and fun!
+In building this website I got to experience and test out programs like Netlify for backend web development; Figma, HTML, CSS and JavaScript for front-end; as well as Google SEO and a free domain registrar to distribute my personal website over the internet completely for free! 
 
 
 # Improvements
-I hope to continue adding support for more devices and increasing accesibility to my website. 
+In the future. I hope to expand on the projects that I upload to the website and continue adding support for more devices and increasing accesibility to my website. 
 Feel free to check back as I update my website with more of my projects to come! 

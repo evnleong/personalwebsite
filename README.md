@@ -1,6 +1,6 @@
 # Personal Website Project! (evanlxn.ga)
 
-hello world! Evan here! Welcome to the readme for my personal website!
+hello world! Welcome to the readme for my personal website.
 
 
 # The Story
